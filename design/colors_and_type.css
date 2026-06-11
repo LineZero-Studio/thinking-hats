@@ -1,0 +1,203 @@
+/* ============================================================
+   LineZero Studio — Design Tokens
+   Museum of May / Brand Design System
+   ============================================================ */
+
+/* ── Fonts ─────────────────────────────────────────────────── */
+/* Primary font import via Adobe Typekit */
+/* <link rel="stylesheet" href="https://use.typekit.net/zri8gmw.css"> */
+
+:root {
+  /* ── Typography Families ─────────────────────────────────── */
+  --font-display:      "termina", sans-serif;       /* Headlines, hero text */
+  --font-body:         "carbona-variable", sans-serif; /* Body copy, UI text */
+  --font-mono:         "SF Mono", "Fira Code", "Consolas", monospace;
+
+  /* ── Font Weights ────────────────────────────────────────── */
+  --weight-regular:    400;
+  --weight-medium:     500;
+  --weight-semibold:   600;
+  --weight-bold:       700;
+  --weight-extrabold:  800;
+
+  /* ── Type Scale ──────────────────────────────────────────── */
+  --text-xs:           12px;
+  --text-sm:           14px;
+  --text-base:         16px;
+  --text-lg:           20px;
+  --text-xl:           24px;
+  --text-2xl:          31px;
+  --text-3xl:          40px;
+  --text-4xl:          48px;
+
+  /* ── Line Heights ────────────────────────────────────────── */
+  --leading-tight:     1;
+  --leading-snug:      1.17;    /* 56/48 */
+  --leading-normal:    1.5;
+  --leading-relaxed:   1.6;
+
+  /* ── Letter Spacing ──────────────────────────────────────── */
+  --tracking-tight:    -0.02em;
+  --tracking-normal:   0;
+  --tracking-wide:     0.10em;  /* Used for labels / overlines */
+
+  /* ── Core Brand Colors ───────────────────────────────────── */
+  --color-black:       #151515;
+  --color-white:       #ffffff;
+  --color-accent:      #e21c39;  /* LineZero red */
+
+  /* ── Neutral Scale ───────────────────────────────────────── */
+  --neutral-950:       #151515;  /* Deepest background */
+  --neutral-900:       #1f1f1f;  /* Primary surface */
+  --neutral-850:       #252525;  /* Elevated surface / cards */
+  --neutral-800:       #2a2a2a;
+  --neutral-700:       #424242;  /* Muted text, icons */
+  --neutral-600:       #444444;  /* Borders, dividers */
+  --neutral-400:       #888888;
+  --neutral-300:       #a0a0a0;
+  --neutral-200:       #d9d9d9;  /* Placeholder backgrounds */
+  --neutral-100:       #f1f1f1;  /* Light surface / card bg */
+  --neutral-50:        #f8f8f8;
+
+  /* ── Semantic Colors ─────────────────────────────────────── */
+  --color-bg:          var(--neutral-950);
+  --color-surface:     var(--neutral-900);
+  --color-surface-elevated: var(--neutral-850);
+  --color-fg:          var(--color-white);
+  --color-fg-muted:    var(--neutral-100);
+  --color-fg-subtle:   var(--neutral-700);
+  --color-border:      var(--neutral-600);
+  --color-primary:     var(--color-accent);
+  --color-primary-hover: #c81630;
+
+  /* ── Spacing Scale ───────────────────────────────────────── */
+  --space-1:           4px;
+  --space-2:           8px;
+  --space-3:           10px;
+  --space-4:           14px;
+  --space-5:           16px;
+  --space-6:           17px;   /* Figma gap in cards */
+  --space-7:           20px;
+  --space-8:           28px;
+  --space-9:           30px;
+  --space-10:          32px;
+  --space-12:          36px;
+  --space-14:          48px;
+  --space-16:          60px;
+  --space-20:          120px;
+
+  /* ── Border Radii ────────────────────────────────────────── */
+  --radius-sm:         5px;
+  --radius-md:         8px;
+  --radius-lg:         16px;
+  --radius-xl:         32px;
+
+  /* ── Shadows ─────────────────────────────────────────────── */
+  --shadow-none:       none;
+  /* The brand does not use drop shadows — depth is conveyed
+     through surface color differences and borders. */
+
+  /* ── Transitions ─────────────────────────────────────────── */
+  --ease-default:      cubic-bezier(0.25, 0.1, 0.25, 1);
+  --duration-fast:     150ms;
+  --duration-normal:   250ms;
+}
+
+/* ── Semantic Typography Classes ───────────────────────────── */
+
+.type-hero {
+  font-family: var(--font-display);
+  font-weight: var(--weight-extrabold);
+  font-size: var(--text-4xl);
+  line-height: var(--leading-snug);
+  letter-spacing: var(--tracking-tight);
+  color: var(--color-fg);
+  text-wrap: balance;
+}
+
+.type-h1 {
+  font-family: var(--font-display);
+  font-weight: var(--weight-extrabold);
+  font-size: var(--text-4xl);
+  line-height: var(--leading-snug);
+  letter-spacing: var(--tracking-tight);
+  color: var(--color-fg);
+}
+
+.type-h2 {
+  font-family: var(--font-display);
+  font-weight: var(--weight-bold);
+  font-size: var(--text-2xl);
+  line-height: var(--leading-tight);
+  letter-spacing: var(--tracking-tight);
+  color: var(--color-fg);
+}
+
+.type-h3 {
+  font-family: var(--font-display);
+  font-weight: var(--weight-bold);
+  font-size: var(--text-xl);
+  line-height: var(--leading-snug);
+  letter-spacing: var(--tracking-tight);
+  color: var(--color-fg);
+}
+
+.type-body {
+  font-family: var(--font-body);
+  font-weight: var(--weight-regular);
+  font-size: var(--text-lg);
+  line-height: var(--leading-relaxed);
+  color: var(--color-fg-muted);
+}
+
+.type-body-sm {
+  font-family: var(--font-body);
+  font-weight: var(--weight-regular);
+  font-size: var(--text-base);
+  line-height: 1.5;
+  color: var(--color-fg-muted);
+}
+
+.type-label {
+  font-family: var(--font-body);
+  font-weight: var(--weight-bold);
+  font-size: var(--text-base);
+  line-height: 1.5;
+  letter-spacing: var(--tracking-wide);
+  text-transform: uppercase;
+  color: var(--color-fg-subtle);
+}
+
+.type-caption {
+  font-family: var(--font-body);
+  font-weight: var(--weight-regular);
+  font-size: var(--text-xs);
+  line-height: 1.33;
+  color: var(--color-fg-subtle);
+}
+
+.type-link {
+  font-family: var(--font-body);
+  font-weight: var(--weight-bold);
+  font-size: var(--text-base);
+  line-height: 1.5;
+  text-decoration: underline;
+  color: var(--color-fg);
+}
+
+.type-button {
+  font-family: var(--font-body);
+  font-weight: var(--weight-bold);
+  font-size: var(--text-base);
+  line-height: 1.5;
+  text-align: center;
+  color: var(--color-white);
+}
+
+.type-nav {
+  font-family: var(--font-body);
+  font-weight: var(--weight-regular);
+  font-size: var(--text-base);
+  line-height: 1.5;
+  color: var(--color-fg-muted);
+}
