@@ -2,7 +2,7 @@
 
 A public LineZero Studio prototype for turning Six Thinking Hats notes into a concise decision brief.
 
-Live demo: https://thinking-hats.vercel.app
+Live demo: https://thinking-hats.vercel.app/demo
 
 Repository: https://github.com/LineZero-Studio/thinking-hats
 
