@@ -5,7 +5,7 @@ export const EXAMPLE_DECISION_BRIEF: DecisionBrief = {
   suggestedDecision:
     "Run a constrained LinkedIn sprint, but protect the project work with a post template, a time cap, and a ten-post review checkpoint.",
   rationale:
-    "The campaign has meaningful upside because it can compound visibility around work you are already shipping. The main risk is not the posting itself; it is letting the writing workload steal time, energy, or confidence from the May sprint.",
+    "The campaign has meaningful upside because it can compound visibility around work you are already shipping. The main risk is not the posting itself; it is letting the writing workload steal time, energy, or confidence from the June sprint.",
   mainTradeoff:
     "Daily public consistency versus keeping the actual project sprint focused and sustainable.",
   biggestRisk:

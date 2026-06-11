@@ -45,7 +45,7 @@ export const HATS: HatConfig[] = [
     prompt:
       "Just the facts. What do you know, what don't you know, and what would you need to find out?",
     hint: "No opinions yet. No feelings. Just what's verifiably the case.",
-    placeholder: "e.g. We ship one project per day in May. We have ~800 LinkedIn followers.",
+    placeholder: "e.g. We ship one project per day in June. We have ~800 LinkedIn followers.",
   },
   {
     id: "red",
@@ -100,23 +100,23 @@ export const HATS: HatConfig[] = [
       "Other approaches. Variations. The version of this that isn't obvious. Don't filter.",
     hint: "Bad ideas welcome. The goal is options, not commitments.",
     placeholder:
-      "e.g. Blog instead. YouTube. One thumbnail per project, posted as a carousel on day 31.",
+      "e.g. Blog instead. YouTube. One thumbnail per project, posted as a carousel on day 30.",
   },
 ];
 
 export const EXAMPLE_SESSION = {
-  topic: "Should we post daily on LinkedIn during our May project sprint?",
+  topic: "Should we post daily on LinkedIn during our June project sprint?",
   entries: {
-    blue: ["Decide whether to commit to a daily LinkedIn post for each project we ship in May."],
+    blue: ["Decide whether to commit to a daily LinkedIn post for each project we ship in June."],
     white: [
-      "We ship one project per day for all of May.",
+      "We ship one project per day for all of June.",
       "We have a small but active LinkedIn following.",
       "Daily posting requires consistent writing; we've never done it.",
       "Goal is indirect business generation, not direct sales.",
     ],
     red: [
       "Excited about the visibility.",
-      "Tired; May is already a heavy month.",
+      "Tired; June is already a heavy month.",
       "Confused; none of us really get LinkedIn.",
       "Mild dread about the writing volume.",
     ],
@@ -137,7 +137,7 @@ export const EXAMPLE_SESSION = {
     green: [
       "Skip LinkedIn; publish a blog with one post per project instead.",
       "Record a 60-second YouTube walkthrough per project.",
-      "Build a 31-day countdown site that reveals one project a day.",
+      "Build a 30-day countdown site that reveals one project a day.",
       "Use a different medium per project; match the work to the channel.",
       "Batch into a single end-of-month carousel post instead of daily.",
     ],

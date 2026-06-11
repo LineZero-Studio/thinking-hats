@@ -77,7 +77,7 @@ export default function Intro({
             value={topic}
             maxLength={INPUT_LIMITS.topic}
             onChange={(event) => setTopic(event.target.value)}
-            placeholder="e.g. Daily LinkedIn campaign for the May sprint"
+            placeholder="e.g. Daily LinkedIn campaign for the June sprint"
           />
           <div className="char-counter">
             {topic.length}/{INPUT_LIMITS.topic}
