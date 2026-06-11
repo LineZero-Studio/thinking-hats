@@ -8,7 +8,7 @@
     "type": "git",
     "url": "https://github.com/LineZero-Studio/thinking-hats.git"
   },
-  "homepage": "https://thinking-hats.vercel.app/demo",
+  "homepage": "https://thinking-hats.vercel.app",
   "bugs": {
     "url": "https://github.com/LineZero-Studio/thinking-hats/issues"
   },

@@ -2,13 +2,15 @@
 
 A public LineZero Studio prototype for turning Six Thinking Hats notes into a concise decision brief.
 
-Live demo: https://thinking-hats.vercel.app/demo
+Live site: https://thinking-hats.vercel.app
+
+Example demo: https://thinking-hats.vercel.app/demo
 
 Repository: https://github.com/LineZero-Studio/thinking-hats
 
 ## What This Is
 
-Thinking Hats is a small Next.js app that walks a decision through six thinking modes, then produces a structured decision brief. The public demo runs in example-only mode so anyone can explore the flow without an API key, account, or access code.
+Thinking Hats is a small Next.js app that walks a decision through six thinking modes, then produces a structured decision brief. The public site has a landing page at `/` and an example-only demo at `/demo` so anyone can explore the flow without an API key, account, or access code.
 
 This is an independent public prototype that references the Six Thinking Hats methodology developed by Dr. Edward de Bono. It is not an official Edward de Bono, de Bono Group, or Six Thinking Hats training product.
 
@@ -31,7 +33,7 @@ npm run dev
 
 Open http://127.0.0.1:3000.
 
-With no AI environment variables configured, the app falls back to example-only mode.
+Open http://127.0.0.1:3000/demo to view the example-only demo.
 
 ## Environment Setup
 
@@ -58,14 +60,14 @@ NEXT_PUBLIC_GITHUB_URL=https://github.com/LineZero-Studio/thinking-hats
 
 In this mode:
 
-- The app opens the prepared LinkedIn example.
+- `/demo` opens the prepared LinkedIn example.
 - No OpenAI request is made.
 - No access code is required.
 - The final brief is static example content.
 
 ### Live AI Mode
 
-Use this when you want the app to generate briefs with your own OpenAI API key:
+Use this when you want to build a live-AI version with your own OpenAI API key. The public `/demo` route is intentionally static, but the repo still includes the server-side `/api/brief` route and live-AI components for custom builds.
 
 ```env
 EXAMPLE_ONLY_DEMO=false
@@ -77,7 +79,7 @@ MVP_ACCESS_CODE=choose-a-private-demo-code
 NEXT_PUBLIC_GITHUB_URL=https://github.com/your-org/your-fork
 ```
 
-Live AI mode requires both `OPENAI_API_KEY` and `MVP_ACCESS_CODE`. The access code is a simple cost-control gate for no-login deployments. If either value is missing, the app remains in example-only mode.
+The `/api/brief` route requires both `OPENAI_API_KEY` and `MVP_ACCESS_CODE`. The access code is a simple cost-control gate for no-login deployments. If either value is missing, the brief API returns unavailable instead of calling OpenAI.
 
 ## Deploying To Vercel
 
